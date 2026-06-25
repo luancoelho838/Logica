@@ -1,14 +1,16 @@
 Console.WriteLine("Verificação de ano bissexto!\n");
 
 Console.WriteLine("Digite que ano deseja consultar: ");
-int ano = int.Parse(Console.ReadLine());
+double ano = double.Parse(Console.ReadLine());
 
 
-int priVerificador = ano / 4;
-int segVerificador = ano / 100;
-int terVerificador = ano /400;
+if(ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0)
+{
+    Console.WriteLine($"O ano {ano} é bissexto!");
+}
+else
+{
+    Console.WriteLine($"O ano {ano} não é bissexto!");
+}
 
-if(priVerificador % 2 == 0);
-
-/*preciso refazer*/
 
