@@ -11,3 +11,8 @@ for(int i = 1; i <= numero; i++)
         Console.WriteLine(i);
     }
 }
+
+
+
+
+
